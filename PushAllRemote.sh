@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # list of repositories to push
-repositories=("AccesoDatos" "CevaLogisticsInventaryApp" "interfaces" "Marfol" "ProgramacionMoviles" "ServiciosProcesos" "SistemasGestion" "darkone0112" "AutoGit")
+repositories=("AccesoDatos" "CevaLogisticsInventaryApp" "interfaces" "ProgramacionMoviles" "ServiciosProcesos" "SistemasGestion" "darkone0112" "AutoGit" "JavaFX" "JdbcDaoProject" "Marfol")
 
 # loop through repositories and push latest changes
 for repo in "${repositories[@]}"
