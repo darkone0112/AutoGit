@@ -7,10 +7,13 @@ repositories=("Autogit" "CevaLogisticsInventaryApp" "DAM1" "DAM2" "darkone0112" 
 cd ..
 for repo in "${repositories[@]}"
 do
+  echo "_________________________________________________________"
+  echo "Pushing $repo"
   cd $repo
   git status
   git add .
   git commit -m "Commit from script"
   git push
   cd ..
+  echo "_________________________________________________________"
 done
