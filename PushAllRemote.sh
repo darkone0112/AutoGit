@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # list of repositories to push
-repositories=("Autogit" "CevaLogisticsInventaryApp" "DAM1" "DAM2" "darkone0112" "DLX-Patcher" "JavaFX" "JdbcDaoProject" "pippin-bot" "Python" "legacy-databases-migration" "ad-harvesting-app")
-
+repositories=$(curl -s "https://api.github.com/users/darkone0112/repos?per_page=1000" | grep -o 'git://[^"]*')
 # loop through repositories and push latest changes
 cd ..
 for repo in "${repositories[@]}"
